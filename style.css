@@ -1,0 +1,12 @@
+body {
+  font-family: monospace;
+  background-color: #222;
+  color: #eee;
+  padding: 2rem;
+}
+
+.exploit-container {
+  border: 2px dashed #f00;
+  padding: 1rem;
+  background-color: #333;
+}

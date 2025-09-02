@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Porsche CSP Exploit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="exploit-container">
+    <h1>🚨 Porsche CSP Bypass Demonstration</h1>
+    <p>This page executes inline and eval-based JavaScript automatically, proving that <strong>connect-store.porsche.com</strong> allows unsafe script execution.</p>
+  </section>
+
+  <!-- Inline script (CSP bypass) -->
+  <script>
+    document.body.style.backgroundColor = "#111";
+    console.log("✅ Inline script executed");
+    alert("✅ CSP bypass: Inline script executed");
+  </script>
+
+  <!-- Eval-based script (unsafe-eval test) -->
+  <script>
+    eval("console.log('✅ Eval executed'); alert('✅ CSP bypass: unsafe-eval executed');");
+  </script>
+</body>
+</html>
